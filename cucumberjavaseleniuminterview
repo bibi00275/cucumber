@@ -1,0 +1,60 @@
+I. Selenium WebDriver Fundamentals
+
+Core Concepts:
+
+Explain the Selenium WebDriver architecture.
+What is the difference between findElement and findElements methods?
+Describe how you handle dynamic elements using Selenium.
+Differentiate between implicit waits, explicit waits, and fluent waits. Provide use cases for each.
+How do you perform cross-browser testing with Selenium WebDriver?
+Advanced Interactions:
+
+Walk me through how you'd simulate drag-and-drop actions using Selenium.
+How do you manage file uploads and downloads in Selenium tests?
+What techniques do you use for handling pop-ups, alerts, and frames?
+Explain strategies for capturing screenshots at different stages of test execution.
+II. Java Programming Principles
+
+OOP Concepts:
+
+Can you illustrate Object-Oriented Programming concepts (inheritance, polymorphism, etc.) with examples relevant to Selenium test design?
+How do you leverage interfaces and abstract classes to structure your Selenium automation framework?
+Coding & Best Practices:
+
+How do you organize your test data (test data management practices)?
+What are some design patterns (e.g., Page Object Model) you employ for efficient and maintainable Selenium tests?
+Could you provide a small coding exercise demonstrating proficiency in handling collections, string manipulation, etc.?
+III. TestNG Framework
+
+Features & Annotations:
+
+What are the advantages of using TestNG over JUnit?
+Explain the purpose of annotations like @Test, @BeforeTest, @DataProvider, etc.
+Can you implement a test demonstrating test prioritization, grouping, and parameterization using TestNG?
+Assertions and Reports:
+
+How do you incorporate various assertion techniques (hard and soft asserts) with TestNG?
+What strategies do you have for generating informative and customized test reports with TestNG?
+IV. Cucumber (Behavior-driven Development)
+
+Understanding BDD:
+
+Define Behavior-driven Development (BDD) and its importance in the testing process.
+How does Cucumber align with BDD principles?
+Compare and contrast Cucumber with other BDD frameworks (e.g., JBehave, SpecFlow).
+Gherkin & Feature Files
+
+Explain the Gherkin syntax (Given, When, Then) with examples.
+How do you organize feature files within your project structure?
+How do you ensure effective collaboration on feature files between developers, testers, and business stakeholders?
+Step Definitions & Execution
+
+Walk me through the process of creating step definitions and mapping them to Gherkin scenarios.
+Can you implement a simple step definition using regular expressions and data tables?
+How do you debug failing Cucumber tests?
+Additional Topics (Depending on Interview Level):
+
+Continuous Integration: How have you integrated Selenium tests in a CI/CD pipeline (Jenkins, Maven, etc.)?
+BDD Collaboration: Describe your experience in defining scenarios working with product owners or business analysts.
+Performance Testing: Have you used Selenium for basic web application performance testing (load times, etc.)?
+Cloud-based Testing: Experience with cloud-based Selenium testing platforms (e.g., Sauce Labs, BrowserStack)?
