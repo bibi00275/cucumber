@@ -59,7 +59,39 @@ Advanced Interactions:
 
 Walk me through how you'd simulate drag-and-drop actions using Selenium.
 How do you manage file uploads and downloads in Selenium tests?
+===============================================================
 What techniques do you use for handling pop-ups, alerts, and frames?
+Pop-Ups
+
+Pop-ups often open in new windows or tabs. Strategies include:
+
+Prevention (If Possible): If your application settings allow it, attempt to disable pop-ups at the browser level to avoid encountering them during tests.
+
+Switching Windows:
+
+driver.getWindowHandle(): Get the handle of the original window.
+driver.getWindowHandles(): Get a set of handles representing all open windows.
+Switch to the popup window handle, perform interaction, and then switch back to the original window handle.
+Alerts
+
+Selenium provides an Alert interface for managing JavaScript alerts, confirmations, and prompts.
+
+Accepting: driver.switchTo().alert().accept(). Clicks "OK" or equivalent.
+Dismissing: driver.switchTo().alert().dismiss(). Clicks "Cancel" or equivalent.
+Getting Text: driver.switchTo().alert().getText(). Retrieves the text displayed on the alert box.
+Sending Input (Prompts): driver.switchTo().alert().sendKeys("Input Text"). Types data into a prompt alert.
+Frames
+
+Frames (or iframes) are HTML documents embedded within a parent HTML document. You need to switch focus before interacting with elements inside a frame.
+
+Switching by Index: driver.switchTo().frame(0). (If the frame is identified by zero-based index).
+Switching by Name or ID: driver.switchTo().frame("frame_name").
+Switching by WebElement:
+First, locate the frame element using findElement.
+Then, pass the WebElement to driver.switchTo().frame(frameElement).
+Switching Back to Parent: driver.switchTo().parentFrame().
+Switching to Default: driver.switchTo().defaultContent().
+===========================================
 Explain strategies for capturing screenshots at different stages of test execution.
 II. Java Programming Principles
 
